@@ -82,7 +82,7 @@ if check_password():
                 st.dataframe(data)
                 if not data.empty:     
                     for index,x in data.iterrows():
-			if int(x[7]) == 0:
+			            if int(x[7]) == 0:
                         	str1="http://bulkwhatsapp.live/wapp/api/send?apikey=e28a534874e64cc2949b8dba67bac699&mobile="
 	
         	                str2=str(x[6])
