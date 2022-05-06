@@ -91,7 +91,7 @@ if check_password():
                         	#if int(x[7]) == 0:
                         	#str6=", Present to college and Attended:: "
                         	#else:
-                            	str6=", Absent to The College ,:: "   
+                            str6=", Absent to The College ,:: "   
                         	#str7=str(x[7])+":: Classes."
                         	str8="  %0a This for Your Information.Regards & Thanks  %0a Principal , %0a  SWARNANDHRA COLLEGE OF ENGINEERING AND TECHNOLOGY.  %0a Thank you\""
                         	result=str1+str2+str3+str5+str6+str8
@@ -105,4 +105,4 @@ if check_password():
                                 	st.warning("Sms Not Sent "+str2+"-"+str5+"-"+str7)
                         	#st.balloons()
 st.write("Developed by Rama Bhadra Rao Maddu & Dr Bomma Rama Krishna")
-git remote add origin https://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@github.com/ramabhadrarao/sendbulksmsexcel.git
+
