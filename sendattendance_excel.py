@@ -99,9 +99,9 @@ if check_password():
                                 response=res.json()
                                 #st.write(response["status"])
                                 if(response["status"] == "success"): 
-                                        st.success("Sms Sent Successfully"+str2+"-"+str5+"-"+str7)
+                                        st.success("Sms Sent Successfully"+str2+"-"+str5)
                                 else:
-                                        st.warning("Sms Not Sent "+str2+"-"+str5+"-"+str7)
+                                        st.warning("Sms Not Sent "+str2+"-"+str5)
                                 #st.balloons()
 st.write("Developed by Rama Bhadra Rao Maddu & Dr Bomma Rama Krishna")
 
