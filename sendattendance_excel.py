@@ -84,13 +84,13 @@ if check_password():
                     for index,x in data.iterrows():
                         if int(x[7]) == 0:
                                 str1="http://bulkwhatsapp.live/wapp/api/send?apikey=e28a534874e64cc2949b8dba67bac699&mobile="
-                                str2=str(x[6])
+                                str2=str(x[4])
                                 str3="&msg=""\"Dear Parent,  %0a Your son or daughter :"
-                                str5=str(x[0]+"("+x[1]+")")
+                                str5=str(x[0])
                                 #if int(x[7]) == 0:
                                 #str6=", Present to college and Attended:: "
                                 #else:
-                                str6=", Absent to The College ,:: "   
+                                str6=", Absent to The College , on :="+str(x[8])   
                                 #str7=str(x[7])+":: Classes."
                                 str8="  %0a This for Your Information.Regards & Thanks  %0a Principal , %0a  SWARNANDHRA COLLEGE OF ENGINEERING AND TECHNOLOGY.  %0a Thank you\""
                                 result=str1+str2+str3+str5+str6+str8
@@ -99,9 +99,9 @@ if check_password():
                                 response=res.json()
                                 #st.write(response["status"])
                                 if(response["status"] == "success"): 
-                                        st.success("Sms Sent Successfully"+str2+"-"+str5)
+                                        st.success("Sms Sent Successfully to Mobile No:"+str2+"belongs to :"+str5)
                                 else:
-                                        st.warning("Sms Not Sent "+str2+"-"+str5)
+                                        st.warning("Sms Not Sent to Mobile No"+str2+"belongs to -"+str5+":::This Mobile No Don't Have WhatsApp:::")
                                 #st.balloons()
 st.write("Developed by Rama Bhadra Rao Maddu & Dr Bomma Rama Krishna")
 
