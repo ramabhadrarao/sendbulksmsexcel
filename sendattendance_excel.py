@@ -83,7 +83,7 @@ if check_password():
                 if not data.empty:     
                     for index,x in data.iterrows():
                         if int(x[7]) == 0:
-                                str1="http://bulkwhatsapp.live/wapp/api/send?apikey=f98c13a5259f4cc1ae8822260ad701d5&mobile="
+                                str1="http://bulkwhatsapp.live/wapp/api/send?apikey=511b46864fac4a3f96a50be0fc06d8d0&mobile="
                                 str2=str(x[4])
                                 str3="&msg=""\"Dear Parent,  %0a Your son or daughter :"
                                 str5=str(x[0])
